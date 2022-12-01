@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@font-face{
+    font-family: "Doublebass";
+    src: url(../fonts/DoubleBass-Regular-trial.ttf) format('truetype');
+}
+
+body{
+    overflow-x: hidden;
+}
+
+:root{
+    ---cinza: #545454;
+    ---roxo: #8C52FF;
+    ---lilas: #CED7FF;
+}
+
+header{
+    background-color: var(---cinza);
+    height: 80px;
+}
+
+section{
+    padding: 2% 5%;
+
+}
+
+p{
+    text-align: justify;
+    font-size: 22px;
+    color:#000000;
+    margin-top: 20px;
+}
+
+.logo img{
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+
+}
+
+.logo h1{
+    color: white;
+    margin-left: 10px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.menu-desk{
+    float: right;
+}
+
+.menu-desk ul{
+    position: relative;
+    margin-top: 30px;
+}
+
+.menu-desk li{
+    padding: 0 10px;
+    display: inline-block;
+}
+
+.menu-desk li.selected{
+    font-weight: bold;
+}
+
+.menu-desk a{
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+input{
+    font-family: 'Open Sans';
+}
+
+.pesquisa{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa input{
+    border: 0ch;
+    height: 25px;
+    padding: 10px;
+}
+
+.material-symbols-outlined{
+    color: white;
+    margin-right: 10px;
+}
+
+.menu{
+    display: flex;
+    height: 100%;
+}
+
+.banner{
+    width: 100%;
+    background: url("../img/maos.png");
+    height: 850px;
+    padding-top: 80px;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 30px solid var(---cinza);
+}
+
+#snip-text-banner{
+    color: #ffffff;
+    text-shadow: 0px 0px 20px #000000;
+    font-size: 150px;
+    font-family: "Doublebass";
+}
+
+#text-banner{
+    color: #ffffff;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    text-shadow: 0px 0px 10px #000000;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.def-auditiva{
+    color: var(---roxo);
+    padding-top: 20px;
+
+}
+
+.def-auditiva a {
+    font-size: 15px;
+    color: var(---roxo);
+}
+
+.def-auditiva img{
+    height: 250px;
+}
+
+.def-auditiva h3{
+    font-size: 25px;
+}
+
+.libras{
+    color: var(---roxo);
+    padding-top: 20px;
+    background-color: var(---lilas);
+}
+
+.libras a{
+    font-size: 15px;
+    color: var(---roxo);
+}
+
+.libras img{
+    height: 250px;
+}
+
+.libras h3{
+    font-size: 25px;
+}
+
+.libras div{
+    display: flex;
+    justify-content: space-between;
+}
+
+iframe{
+    aspect-ratio: 16/9;
+    height: 400px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.libras p{
+    margin-right: 10px;
+}
+
+#libras{
+    background-color: var(---lilas);
+    color: var(---roxo);
+}
+
+#libras img{
+    height: 300px;
+}
+
+.def-escolas{
+    color: var(---roxo);
+}
+
+.def-escolas a{
+    font-size: 15px;
+    color: var(---roxo) ;
+}
+
+.sobre-nos{
+    color: var(---roxo);
+    background-color: var(---lilas);
+}
+
+.sobre-nos a{
+    font-size: 15px;
+    color: var(---roxo);
+}
+
+.lista li{
+    margin-left: 30px;
+}
+
+#fundo{
+    background-color: var(---lilas)
+}
+
+/*rodapé*/
+
+footer{
+    background: var(---cinza);
+    position:relative;
+    padding: 20px;
+}
+
+footer .container{
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px ;
+}
+
+footer h2{
+    color: white;
+}
+
+.acessibilidade a{
+    text-decoration:underline;
+    color: white;
+    font-size: 20px;
+    text-decoration-color: var(---roxo);
+}
+
+.acessibilidade img{
+    width: 50px;
+    height: 50px;
+}
+
+.horizontal{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.snip-rodape{
+    margin-left: 70px;
+}
+
+.snip-rodape h2{
+    text-decoration: underline;
+    text-decoration-color: var(---roxo);
+    font-size: 20px;
+}
+
+.snip-rodape ul{
+    list-style: none;
+}
+
+.snip-rodape a{
+    color: white;
+}
+
+/*EQUIPE*/
+#equipe{
+    width: 100vw;
+}
+#equipe .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.linha{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.equipe{
+    width: 33%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;align-items: center;
+}
+
+.equipe img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.equipe h2{
+    color: var(---roxo);
+}
+
+#equipe h2{
+    color: var(---roxo);
+}
+
+.snip img{
+    height: 350px;
+}
+
+#sniph2{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.snip{
+    display: flex;
+    width: 80%;
+    gap: 30px;
+}
+.titulo{
+    position: relative;
+    padding: 24px;
+    color: var(---roxo);
+}
+
+#vertical{
+    flex-direction: column;
+    gap: 60px;
+    margin: 30px 0;
+}
+#vertical .horizontal{
+    align-items: flex-start;
+    width: 100%;
+}
+#vertical p{
+    margin: 0;
+}
+#vertical img{
+    width: 100%
+}
+
+@media screen and (max-width: 1000px){
+    .horizontal, .linha, .snip{
+        flex-direction: column;
+    }
+    .equipe{
+        width: 100%;
+    }
+    .equipe img{
+        width: 50%;
+    }
+    header{
+        height: 110px;
+    }
+    header input{
+        width: 100px;
+    }
+    header .container{
+        gap: 30px;
+    }
+    iframe{
+        width: 100%;
+        height: auto;
+    }
+    .def-auditiva{
+        width: 100%;
+    }
+}
